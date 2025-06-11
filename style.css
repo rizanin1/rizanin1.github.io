@@ -1,0 +1,240 @@
+/* Estilo geral para o corpo da página */
+body {
+    background-color: rgb(200, 206, 206); /* Cor de fundo da página */
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 0; /* Remove o espaçamento interno */
+    display: flex; /* Usa flexbox para estrutura da página */
+    flex-direction: column; /* Organiza os elementos em coluna (vertical) */
+    min-height: 100vh; /* Garante altura mínima de 100% da tela */
+    font-family: sans-serif; /* Usa fonte padrão do sistema (sem serifa) */
+    font-size: 1rem; /* Tamanho base da fonte (1rem = 16px padrão) */
+    line-height: 1.6; /* Altura da linha para melhor leitura */
+    color: #333; /* Cor do texto (cinza escuro) */
+}
+
+/* Estilo para o cabeçalho da página */
+header {
+    text-align: center; /* Centraliza o texto */
+    font-size: 2rem; /* Tamanho do texto do cabeçalho */
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branca */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilo da barra de navegação */
+nav {
+    display: flex; /* Coloca os botões lado a lado */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 20px; /* Espaço entre os botões */
+    background-color: #333; /* Fundo escuro da barra */
+    padding: 10px 0; /* Espaçamento vertical */
+}
+
+/* Estilo dos botões do menu */
+button {
+    background-color: rgb(230, 230, 231); /* Cor de fundo clara */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para mãozinha */
+    transition: background-color 0.3s; /* Suaviza a mudança de cor no hover */
+}
+
+/* Estilo para os links dentro dos botões */
+button a {
+    text-decoration: none; /* Remove sublinhado do link */
+    color: inherit; /* Herda a cor do botão */
+}
+
+/* Efeito ao passar o mouse nos botões */
+button:hover {
+    background-color: #4CAF50; /* Cor de fundo verde ao passar o mouse */
+    color: white; /* Cor do texto branca */
+}
+
+/* Estilo para a seção principal */
+main {
+    flex-grow: 1; /* Faz o conteúdo crescer para ocupar o espaço disponível */
+    padding: 0px; /* Espaçamento interno */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+/* Estilo da seção de perfil (foto + info) */
+.perfil {
+    display: flex; /* Coloca imagem e texto lado a lado */
+    align-items: flex-start; /* Alinha o texto no topo da imagem */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaço entre imagem e texto */
+    margin: 0px auto; /* Espaço vertical e centraliza horizontalmente */
+    flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+    max-width: 800px; /* Limita a largura máxima */
+}
+
+/* Estilo da imagem de perfil */
+.perfil img {
+    border-radius: 8px; /* Cantos arredondados da imagem */
+}
+
+/* Estilo do bloco de texto ao lado da imagem */
+.perfil .info {
+    max-width: 600px; /* Limita largura máxima do texto */
+}
+
+/* Estilo dos títulos principais */
+h1 {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o título */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1.75rem; /* Tamanho do título */
+    margin-top: 20px; /* Espaço acima do título */
+}
+
+/* Estilo dos subtítulos */
+h2 {
+    background-color: #788078; /* Cor de fundo cinza esverdeado */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o subtítulo */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1.25rem; /* Tamanho do subtítulo */
+    margin-top: 20px; /* Espaço acima do subtítulo */
+}
+
+/* Estilo dos parágrafos */
+p {
+    font-size: 1rem; /* Tamanho padrão da fonte */
+    margin-bottom: 15px; /* Espaço abaixo de cada parágrafo */
+}
+
+/* Estilo para o rodapé da página */
+footer {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+    width: 100%; /* Ocupa toda a largura */
+}
+
+/* Estilo da tabela */
+table {
+    margin: 10px auto; /* Centraliza e dá espaço acima e abaixo */
+    border: 1px solid black; /* Borda da tabela */
+}
+
+/* Estilo dos cabeçalhos da tabela */
+th {
+    color: white; /* Texto branco */
+    border: 1px solid black; /* Borda */
+    text-align: center; /* Texto centralizado */
+    background-color: black; /* Fundo preto */
+}
+
+/* Estilo das células da tabela */
+td {
+    border: 1px solid black; /* Borda das células */
+    text-align: center; /* Texto centralizado */
+}
+
+/* Estilo para área de texto (formulários) */
+textarea {
+    margin-top: 10px; /* Espaço acima */
+    width: 100%; /* Ocupa toda a largura do pai */
+    height: 100px; /* Altura da área de texto */
+    padding: 10px; /* Espaço interno */
+    border: 1px solid black; /* Borda */
+    box-sizing: border-box; /* Inclui borda e padding no tamanho total */
+    resize: none; /* Impede redimensionamento */
+}
+
+/* Estilo para o bloco fieldset */
+fieldset {
+    margin-top: 10px; /* Espaço acima do grupo */
+}
+
+/* Centraliza o texto da legenda */
+legend {
+    text-align: center;
+}
+
+/* Centraliza elementos em linha (usado em formulários) */
+.centralizado {
+    display: flex; /* Flexbox */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 10px; /* Espaço entre os itens */
+}
+
+/* Estilo do botão de envio do formulário */
+button.enviar {
+    display: block; /* Ocupa toda a largura disponível */
+    margin: 20px auto; /* Centraliza horizontalmente com espaço acima/abaixo */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #4CAF50; /* Fundo verde */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+/* Efeito hover no botão de envio */
+button.enviar:hover {
+    background-color: #17461a; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Estilo da div que agrupa campos de formulário */
+.campo {
+    margin: 20px auto; /* Espaço vertical e centralização */
+    width: 100%; /* Ocupa toda a largura */
+    max-width: 500px; /* Limita a largura máxima */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Elementos em coluna */
+    align-items: center; /* Alinha no centro horizontalmente */
+    justify-content: center; /* Centraliza conteúdo */
+}
+
+/* Estilo para o label do formulário */
+.campo label {
+    margin-bottom: 8px; /* Espaço abaixo do label */
+    text-align: center; /* Texto centralizado */
+    width: 100%; /* Ocupa toda a largura */
+    max-width: 500px; /* Limita a largura */
+}
+
+/* Estilo para textarea dentro da div .campo */
+.campo textarea {
+    width: 100%; /* Ocupa toda a largura */
+    max-width: 500px; /* Limite de largura */
+    padding: 10px; /* Espaço interno */
+    border: 1px solid #ccc; /* Cor da borda */
+    border-radius: 4px; /* Cantos arredondados */
+    resize: none; /* Impede redimensionamento */
+}
+
+/* Responsividade: ajustes para telas pequenas */
+/* @media (max-width: 600px) {
+    body {
+        font-size: 0.9rem; 
+    }
+
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    h2 {
+        font-size: 1.1rem; 
+    }
+
+    .perfil {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .perfil .info {
+        max-width: 100%; 
+    }
+} */

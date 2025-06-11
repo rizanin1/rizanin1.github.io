@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Contato</title>
+</head>
+
+<body>
+    <header>Contato</header>
+    <nav>
+        <button><a href="index.html">Home</a></button>
+        <button><a href="filmes.html">Filmes</a></button>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <form class="centralizado">
+                    <label for="nomesobrenome">Nome e sobrenome</label>
+                    <input type="text" id="nomesobrenome" class="input-padrao" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXXXXXX">
+                </form>
+                <form>
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" required></textarea>
+                    </div>
+                </form>
+                <form>
+                    <fieldset class="centralizado">
+                        <legend>Como prefere o nosso contato?</legend>
+                        <label><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+                        <label><input type="radio" name="contato" value="telefone" id="radio-telefone">
+                            Telefone</label>
+                        <label><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+                            Whatsapp</label>
+                    </fieldset>
+
+                </form>
+                <button type="submit" value="Enviar formulário" class="enviar">Enviar formulário</button>
+            </article>
+        </section>
+        <aside></aside>
+    </main>
+    <footer>Direitos reservados a Ricardo Henrique Zanin</footer>
+</body>
+
+</html>
